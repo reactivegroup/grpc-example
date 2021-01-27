@@ -1,15 +1,8 @@
 ## Overview
 
-gRPC is an RPC framework that is based around the idea of defining a service, specifying the methods that can be called remotely with their parameters and return types. 
-Both server-side and client-side can be implemented by different programming languages. [More details](https://grpc.io/docs/what-is-grpc/introduction/).
+This example will help you understand gRPC better. More importantly, You can learn more about how GRPC works. 
 
-![Call Relationship Between Server-side and Client-side](doc/grpc-server-and-clent-relationship.svg)
-
-## How gRPC works
-
-### How to build
-
-This example will help you understand gRPC better.
+## How to build
 
 There are two steps as follows
 
@@ -28,6 +21,14 @@ There are two steps as follows
     - run `HelloWorldServer#main()`
     - run `HelloWorldClient#main()`
     
+    
+## What you can learn
+
++ [RPC introduction](doc/RPC-INTRODUCTION.md)
++ [How to build gRPC server-side](doc/HOW-TO-BUILD-GRPC-SERVER-SIDE.md)
++ [How the gRPC server-side works](doc/HOW-THE-GRPC-SERVER-SIDE-WORKS.md)
+
+
 ### Server
 
 + ServerBuilder: Create a `Server` instance, which will call `ServerProvider` directly.
