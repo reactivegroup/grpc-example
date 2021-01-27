@@ -1,5 +1,5 @@
-# reactive-ctrip
-Ctrip Reactive Bill Of Materials.
+# reactive-group
+Reactive Group Bill Of Materials.
 
 ## Contributing
 
