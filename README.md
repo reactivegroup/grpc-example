@@ -1,6 +1,6 @@
 ## Overview
 
-This example will help you understand gRPC better. More importantly, You can learn more about how GRPC works. 
+This example will help you understand gRPC better. More importantly, You can learn more about how gRPC works. 
 
 ## How to build
 
