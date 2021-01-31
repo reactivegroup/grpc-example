@@ -1,4 +1,4 @@
-package com.pinxiong.grpc.helloworld;
+package io.grpc.examples.helloworld;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 

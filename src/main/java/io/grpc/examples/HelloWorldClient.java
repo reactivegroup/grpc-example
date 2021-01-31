@@ -1,13 +1,13 @@
-package com.pinxiong.grpc;
+package io.grpc.examples;
 
-import com.pinxiong.grpc.HelloWorldServer;
-import com.pinxiong.grpc.helloworld.GreeterGrpc;
-import com.pinxiong.grpc.helloworld.HelloReply;
-import com.pinxiong.grpc.helloworld.HelloRequest;
+import io.grpc.examples.helloworld.GreeterGrpc;
+import io.grpc.examples.helloworld.HelloReply;
+import io.grpc.examples.helloworld.HelloRequest;
 import io.grpc.Channel;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
+
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;

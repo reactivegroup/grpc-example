@@ -1,8 +1,8 @@
-package com.pinxiong.grpc;
+package io.grpc.examples;
 
-import com.pinxiong.grpc.helloworld.GreeterGrpc;
-import com.pinxiong.grpc.helloworld.HelloReply;
-import com.pinxiong.grpc.helloworld.HelloRequest;
+import io.grpc.examples.helloworld.GreeterGrpc;
+import io.grpc.examples.helloworld.HelloReply;
+import io.grpc.examples.helloworld.HelloRequest;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
