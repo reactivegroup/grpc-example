@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.user";
+option java_outer_classname = "UserServiceProto";
+
+service UserService {
+    rpc GetUser (GetUserRequest) returns (GetUserResponse) {}
+    rpc GetUserList (GetUserListRequest) returns (stream User) {}
+    rpc GetUserOneByOne (stream GetUserRequest) returns (stream User) {}
+}
+
+message GetUserRequest {
+    int32 id = 1;
+}
+
+message GetUserResponse {
+    User user = 1;
+}
+
+message GetUserListRequest {
+    int32 page = 1;
+    int32 size = 2;
+}
+
+message User {
+    string name = 1;
+}
