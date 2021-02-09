@@ -19,11 +19,11 @@ private void start() throws IOException {
 There are four steps to build `Server`, `ServerBuilder.forPort`, `ServerBuilder.addService`, `ServerBuilder.build` and `ServerBuilder.start` respectively.
 
 + ServerBuilder.forPort()
-  ![forPort](how-to-build-grpc-server-side-forport.svg)
+  ![forPort](how-to-build/how-to-build-grpc-server-side-forport.svg)
 + ServerBuilder.addService()
-  ![addService](how-to-build-grpc-server-side-addservice.svg)
+  ![addService](how-to-build/how-to-build-grpc-server-side-addservice.svg)
 + ServerBuilder.build()
-  ![build](how-to-build-grpc-server-side-build.svg)
+  ![build](how-to-build/how-to-build-grpc-server-side-build.svg)
 + ServerBuilder.start()
-  ![start](how-to-build-grpc-server-side-start.svg)
+  ![start](how-to-build/how-to-build-grpc-server-side-start.svg)
   
