@@ -39,7 +39,7 @@ public class ReactorHelloWorldServer {
      * The controller instance.
      */
     @Bean
-    public ReactorGreeterGrpc.GreeterImplBase greeterImpl() {
+    public ReactorGreeterGrpc.GreeterImplBase reactorGreeterImpl() {
         return new GreeterImpl();
     }
 }
