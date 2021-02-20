@@ -6,10 +6,19 @@ This example will help you understand gRPC better. More importantly, You can lea
 
 + JDK 8+
 + run `mvn clean package`
+
+## How to run
+
+### HelloWorld
+
 + run `HelloWorldServer#main()` in `io.grpc.examples` package
 + run `HelloWorldClient#main()` in `io.grpc.examples` package
     
-    
+### Reactor HelloWorld
+
++ run `ReactorHelloWorldServer#main()` in `io.grpc.examples` package
++ run `ReactorHelloWorldClient#main()` in `io.grpc.examples` package
+
 ## What you can learn
 
 + [RPC introduction](doc/RPC-INTRODUCTION.md)
