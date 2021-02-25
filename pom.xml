@@ -187,6 +187,13 @@
             <artifactId>spring-boot-starter-webflux</artifactId>
             <version>${spring-boot.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+            <version>3.3.14.RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>

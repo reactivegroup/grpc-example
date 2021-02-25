@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Bean;
 import reactor.core.publisher.Mono;
 
 /**
- * Demonstrates building a gRPC streaming server using Reactor, Reactive-Grpc, grpc-spring, and Spring Boot.
+ * Demonstrates building a gRPC server using Reactor, Reactive-Grpc, grpc-spring, and Spring Boot.
  */
 @SpringBootApplication
 public class ReactorHelloWorldServer {
@@ -30,7 +30,7 @@ public class ReactorHelloWorldServer {
      * Start gRPC server.
      */
     @Bean(initMethod = "start")
-    public GrpcServerHost grpcServerHost(@Value("${port}") int port) {
+    public GrpcServerHost helloWorldGrpcServerHost(@Value("${port1}") int port) {
         logger.info("Listening for gRPC on port {}", port);
         return new GrpcServerHost(port);
     }
@@ -53,10 +53,9 @@ class GreeterImpl extends ReactorGreeterGrpc.GreeterImplBase {
     @Override
     public Mono<HelloReply> sayHello(Mono<HelloRequest> request) {
         return request
-                .map(helloRequest ->
-                        HelloReply.newBuilder()
-                                .setMessage(helloRequest.getName())
-                                .build())
+                .map(helloRequest -> HelloReply.newBuilder()
+                        .setMessage(helloRequest.getName())
+                        .build())
                 .log();
     }
 }
