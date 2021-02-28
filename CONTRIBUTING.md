@@ -10,7 +10,7 @@
 
 ### 先决条件
 
-* JDK 11 +
+* JDK8+ (建议JDK11+)
 * IntelliJ IDEA
 
 ### 1. Check Branch
@@ -24,7 +24,7 @@
 
 PR标题格式为`<head>: <subject>`，标题应该简单并且显示您的意图。
 
-同时commit遵循通用规范，按照以下规则：
+同时commit遵循[通用规范](https://github.com/feflow/git-commit-style-guide)，按照以下规则：
 
   >- `feat:`      新功能（feature） 
   >- `fix:`       修复bug 
@@ -70,3 +70,7 @@ commit body:
 * Package包按domain划分（无util或tool包）。
 * Package私有类用于隐藏非public API。
 * 在一对一依赖的情况下，内部类优先于package私有类。
+
+### Coding Style
+
+一种编码风格建议是[阿里巴巴Java开发手册](https://github.com/alibaba/p3c)
