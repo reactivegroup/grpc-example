@@ -17,29 +17,29 @@ public final class StreamingGreeterGrpc {
   public static final String SERVICE_NAME = "manualflowcontrol.StreamingGreeter";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<HelloRequest,
-      HelloReply> getSayHelloStreamingMethod;
+  private static volatile io.grpc.MethodDescriptor<io.grpc.examples.manualflowcontrol.HelloRequest,
+      io.grpc.examples.manualflowcontrol.HelloReply> getSayHelloStreamingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SayHelloStreaming",
-      requestType = HelloRequest.class,
-      responseType = HelloReply.class,
+      requestType = io.grpc.examples.manualflowcontrol.HelloRequest.class,
+      responseType = io.grpc.examples.manualflowcontrol.HelloReply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<HelloRequest,
-      HelloReply> getSayHelloStreamingMethod() {
-    io.grpc.MethodDescriptor<HelloRequest, HelloReply> getSayHelloStreamingMethod;
+  public static io.grpc.MethodDescriptor<io.grpc.examples.manualflowcontrol.HelloRequest,
+      io.grpc.examples.manualflowcontrol.HelloReply> getSayHelloStreamingMethod() {
+    io.grpc.MethodDescriptor<io.grpc.examples.manualflowcontrol.HelloRequest, io.grpc.examples.manualflowcontrol.HelloReply> getSayHelloStreamingMethod;
     if ((getSayHelloStreamingMethod = StreamingGreeterGrpc.getSayHelloStreamingMethod) == null) {
       synchronized (StreamingGreeterGrpc.class) {
         if ((getSayHelloStreamingMethod = StreamingGreeterGrpc.getSayHelloStreamingMethod) == null) {
           StreamingGreeterGrpc.getSayHelloStreamingMethod = getSayHelloStreamingMethod =
-              io.grpc.MethodDescriptor.<HelloRequest, HelloReply>newBuilder()
+              io.grpc.MethodDescriptor.<io.grpc.examples.manualflowcontrol.HelloRequest, io.grpc.examples.manualflowcontrol.HelloReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SayHelloStreaming"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  HelloRequest.getDefaultInstance()))
+                  io.grpc.examples.manualflowcontrol.HelloRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  HelloReply.getDefaultInstance()))
+                  io.grpc.examples.manualflowcontrol.HelloReply.getDefaultInstance()))
               .setSchemaDescriptor(new StreamingGreeterMethodDescriptorSupplier("SayHelloStreaming"))
               .build();
         }
@@ -54,7 +54,7 @@ public final class StreamingGreeterGrpc {
   public static StreamingGreeterStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<StreamingGreeterStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<StreamingGreeterStub>() {
-        @Override
+        @java.lang.Override
         public StreamingGreeterStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new StreamingGreeterStub(channel, callOptions);
         }
@@ -69,7 +69,7 @@ public final class StreamingGreeterGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<StreamingGreeterBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<StreamingGreeterBlockingStub>() {
-        @Override
+        @java.lang.Override
         public StreamingGreeterBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new StreamingGreeterBlockingStub(channel, callOptions);
         }
@@ -84,7 +84,7 @@ public final class StreamingGreeterGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<StreamingGreeterFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<StreamingGreeterFutureStub>() {
-        @Override
+        @java.lang.Override
         public StreamingGreeterFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new StreamingGreeterFutureStub(channel, callOptions);
         }
@@ -104,19 +104,19 @@ public final class StreamingGreeterGrpc {
      * Streams a many greetings
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<HelloRequest> sayHelloStreaming(
-        io.grpc.stub.StreamObserver<HelloReply> responseObserver) {
+    public io.grpc.stub.StreamObserver<io.grpc.examples.manualflowcontrol.HelloRequest> sayHelloStreaming(
+        io.grpc.stub.StreamObserver<io.grpc.examples.manualflowcontrol.HelloReply> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getSayHelloStreamingMethod(), responseObserver);
     }
 
-    @Override public final io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getSayHelloStreamingMethod(),
             io.grpc.stub.ServerCalls.asyncBidiStreamingCall(
               new MethodHandlers<
-                HelloRequest,
-                HelloReply>(
+                io.grpc.examples.manualflowcontrol.HelloRequest,
+                io.grpc.examples.manualflowcontrol.HelloReply>(
                   this, METHODID_SAY_HELLO_STREAMING)))
           .build();
     }
@@ -133,7 +133,7 @@ public final class StreamingGreeterGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected StreamingGreeterStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new StreamingGreeterStub(channel, callOptions);
@@ -144,8 +144,8 @@ public final class StreamingGreeterGrpc {
      * Streams a many greetings
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<HelloRequest> sayHelloStreaming(
-        io.grpc.stub.StreamObserver<HelloReply> responseObserver) {
+    public io.grpc.stub.StreamObserver<io.grpc.examples.manualflowcontrol.HelloRequest> sayHelloStreaming(
+        io.grpc.stub.StreamObserver<io.grpc.examples.manualflowcontrol.HelloReply> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncBidiStreamingCall(
           getChannel().newCall(getSayHelloStreamingMethod(), getCallOptions()), responseObserver);
     }
@@ -162,7 +162,7 @@ public final class StreamingGreeterGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected StreamingGreeterBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new StreamingGreeterBlockingStub(channel, callOptions);
@@ -180,7 +180,7 @@ public final class StreamingGreeterGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected StreamingGreeterFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new StreamingGreeterFutureStub(channel, callOptions);
@@ -202,8 +202,8 @@ public final class StreamingGreeterGrpc {
       this.methodId = methodId;
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         default:
@@ -211,14 +211,14 @@ public final class StreamingGreeterGrpc {
       }
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SAY_HELLO_STREAMING:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.sayHelloStreaming(
-              (io.grpc.stub.StreamObserver<HelloReply>) responseObserver);
+              (io.grpc.stub.StreamObserver<io.grpc.examples.manualflowcontrol.HelloReply>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -229,12 +229,12 @@ public final class StreamingGreeterGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     StreamingGreeterBaseDescriptorSupplier() {}
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return HelloStreamingProto.getDescriptor();
+      return io.grpc.examples.manualflowcontrol.HelloStreamingProto.getDescriptor();
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("StreamingGreeter");
     }
@@ -254,7 +254,7 @@ public final class StreamingGreeterGrpc {
       this.methodName = methodName;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }
