@@ -18,7 +18,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.pinxiong.grpc</groupId>
+    <groupId>io.grpc</groupId>
     <artifactId>grpc-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -216,7 +216,10 @@
                 </configuration>
             </plugin>
 
-            <!-- protobuf -->
+            <!-- protobuf: generate Java classes based on protobuf -->
+            <!-- The generated code has been moved to the source code,
+            so there is no need to generate it again when compiling -->
+            <!--
             <plugin>
                 <groupId>org.xolstice.maven.plugins</groupId>
                 <artifactId>protobuf-maven-plugin</artifactId>
@@ -236,7 +239,6 @@
                         </goals>
                         <configuration>
                             <protocPlugins>
-                                <!-- reactive gprc -->
                                 <protocPlugin>
                                     <id>reactor-grpc</id>
                                     <groupId>com.salesforce.servicelibs</groupId>
@@ -249,6 +251,7 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
         </plugins>
     </build>
 
