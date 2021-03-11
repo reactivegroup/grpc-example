@@ -67,7 +67,7 @@ class RouteGuideImpl extends ReactorRouteGuideGrpc.RouteGuideImplBase {
                 .interval(Duration.ofSeconds(1))
                 // create a Flux of new Messages using the indexed Flux
                 .map(index -> Feature.newBuilder()
-                        .setName("Time" + System.currentTimeMillis())
+                        .setName("index: " + (index + 1) + ", time(ms): " + System.currentTimeMillis())
                         .build())
                 .log();
     }
